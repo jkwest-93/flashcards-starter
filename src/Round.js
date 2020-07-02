@@ -26,7 +26,11 @@ class Round {
   }
 
   calculatePercentCorrect() {
-    return ((this.turns - this.incorrectGuesses.length) / this.turns) * 100
+    if (this.incorrectGuesses.length === 0) {
+      return 100
+    } else {
+      return ((this.turns - this.incorrectGuesses.length) / this.turns) * 100
+    }
   }
 
   endRound() {
