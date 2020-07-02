@@ -21,13 +21,9 @@ class Game {
   }
 
   createCards() {
-    const newCards = []
-    for (let i = 0; i < prototypeQuestions.length; i++) {
-      let card = prototypeQuestions[i];
-      let currentCard = new Card(card.id, card.question, card.answers, card.correctAnswer);
-      newCards.push(currentCard)
-    }
-    return newCards
+    return prototypeQuestions.map((question) => {
+      return new Card(question.id, question.question, question.answers, question.correctAnswer)
+    })
   }
 
   start() {
