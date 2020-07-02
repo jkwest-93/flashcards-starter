@@ -14,7 +14,7 @@ class Round {
   takeTurn(guess) {
     let newTurn = new Turn(guess, this.returnCurrentCard())
 
-    if(newTurn.giveFeedback() === 'correct!') {
+    if (newTurn.giveFeedback() === 'correct!') {
       this.deck.splice(0, 1)
       this.turns ++;
     } else {
