@@ -6,7 +6,7 @@ For this project, we were asked to build a flashcard game that plays through the
 
 ## Playing the Game
 When the game is running, players receive one question at a time and can use the arrow-keys or type in 1, 2, or 3 to select the correct answer. Players use the `Enter` key to submit their answer and move to the next turn. After each guess, a message returns letting the player know if they got the question correct or incorrect.
-![](assets/jkw-flashcards-first3.gif)
+![](jkw-flashcards-first3.gif)
 
 ## Install/Setup
 
